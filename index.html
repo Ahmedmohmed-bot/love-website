@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مفاجأة لرحمتي ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- زرار الموسيقى -->
+    <div id="musicBtn" class="music-toggle" title="تشغيل / إيقاف الموسيقى">🎵</div>
+
+    <!-- شاشة القفل -->
+    <div id="lockScreen" class="screen active">
+        <div class="heart-icon">❤️</div>
+        <h2>أهلاً يا رحمتي</h2>
+        <p>اكتبي الباسورد عشان تدخلي 💕</p>
+        <div class="dots" id="dots"></div>
+        <div class="keypad" id="keypad">
+            <button class="key" data-num="1">1</button>
+            <button class="key" data-num="2">2</button>
+            <button class="key" data-num="3">3</button>
+            <button class="key" data-num="4">4</button>
+            <button class="key" data-num="5">5</button>
+            <button class="key" data-num="6">6</button>
+            <button class="key" data-num="7">7</button>
+            <button class="key" data-num="8">8</button>
+            <button class="key" data-num="9">9</button>
+            <button class="key del" data-num="del">⌫</button>
+            <button class="key" data-num="0">0</button>
+            <button class="key del" data-num="clear">✕</button>
+        </div>
+        <div class="error-msg" id="errorMsg"></div>
+    </div>
+
+    <!-- شاشة السلايدر -->
+    <div id="loveMeterScreen" class="screen">
+        <h2>إيه أخبار نسبة الحب النهاردة؟ 💖</h2>
+        <div class="slider-container">
+            <input type="range" id="loveSlider" min="0" max="100" value="50">
+            <div class="slider-value"><span id="loveValue">50</span>%</div>
+        </div>
+        <div class="meter-message" id="meterMessage">حركي السلايدر يا رحمتي وشوفي هيحصل إيه 👀</div>
+        <button id="confirmLove" class="action-btn" disabled>تأكيد 💌</button>
+    </div>
+
+    <!-- شاشة القصة -->
+    <div id="storyScreen" class="screen">
+        <div class="message-box" id="messageText"></div>
+        <div class="image-container" id="imageContainer">
+            <img id="storyImage" src="" style="display: none;">
+            <div id="imageCaption" class="image-caption"></div>
+        </div>
+        <button id="nextBtn" class="action-btn" style="display: none;">التالي 💌</button>
+        <button id="gameBtn" class="action-btn" style="display: none; position: absolute; z-index: 99;">دوسي هنا 💖</button>
+    </div>
+
+    <div id="hearts-container"></div>
+    <script src="script.js"></script>
+</body>
+</html>
